@@ -1,14 +1,60 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="styles.css">
-<meta charset="UTF-8" />
-<link rel="icon" type="image/svg+xml" href="cool.svg" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Kakareka's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1 id="webTitle">CRAZY AWESOME PORTFOLIO COMING SOON<h1>
-    <h2 id="subHeading">Check Back Later For More</p>
-    <img src="Computer Gif.gif" alt="Computer struggling with popups" id="computerGif">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm John Kakareka, a computer science student with a passion for cybersecurity. Thank you
+        for visting my barebone portfolio, and feel free to check it out periodically as I my 
+        knowledge base develops.
+        </p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm currently studying computer science at Indiana University. My interests include cybersecurity, programming, 
+            technology, tennis, and playing the french horn.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects Coming Soon</h2>
+        <div class="project">
+            <h3>Project </h3>
+            <p>Description of the project.</p>
+            <a href="https://github.com/yourusername/project">View on GitHub</a>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python</li>
+            <li>Cybersecurity: None... Right now</li>
+            <li>Tools: Working on It</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Let's Chat!</h2>
+        <p>You can reach me at <a href="mailto:jdkakareka@hotmail.com">jdkakareka@hotmail.com</a></p>
+        <button class="download-btn" onclick="downloadResume()">Download My Resume</button>
+    </section>    
+    <footer>
+        <p>© 2024 John Kakareka. All rights reserved.</p>
+    </footer>
 </body>
 </html>

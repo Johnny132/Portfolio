@@ -1,12 +1,54 @@
+body {
+    background-color: #ECF0F1;
+    color: #34495E;
+    font-family: Arial, sans-serif;
+}
 
-#webTitle {
+header, footer {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     text-align: center;
 }
 
-#subHeading {
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #3498DB;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
     text-align: center;
 }
 
-#computerGif {
-    width: 300px;
+section#about, section#projects, section#skills, section#contact {
+    background-color: #FFFFFF;
+    border: 1px solid #ECF0F1;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+button, a.button {
+    background-color: #2ECC71;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, a.button:hover {
+    background-color: #3498DB;
+    color: #FFFFFF;
 }

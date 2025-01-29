@@ -3,55 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My IT & Cybersecurity Portfolio</title>
+    <title>John Kakarekas Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>John Doe</h1>
-        <p>IT Professional & Cybersecurity Enthusiast</p>
+        <nav>
+            <h1>John Kakareka</h1>
+            <div class="nav-menu">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/johnkakareka" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:jdkakare@iu.edu"><i class="fas fa-envelope"></i></a>
+            </div>
+        </nav>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add your project details here -->
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Description of the project...</p>
+    <section class="about-me" id="about">
+        <div class="content-wrapper">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Your introduction text goes here. Talk about your skills, passions, and professional focus.</p>
+                <a href="path/to/your/resume.pdf" download class="resume-btn">
+                    Download Resume <i class="fas fa-download"></i>
+                </a>
+            </div>
         </div>
     </section>
-    
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <!-- List your certifications here -->
-        <ul>
-            <li>Certification Name</li>
-        </ul>
+
+    <section class="current-projects" data-animation="true" id="projects">
+        <h2>Currently Working On</h2>
+        <div class="project-grid"></div>
     </section>
-    
-    <section id="resume">
-        <h2>Resume</h2>
-        <!-- Embed or link to your resume here -->
-        <a href="resume.pdf" target="_blank">Download My Resume</a>
+
+    <section class="all-projects" data-animation="true">
+        <h2>Projects</h2>
+        <div class="project-grid"></div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <!-- Add your contact information here -->
-        <p>Email: jdkakare@iu.edu</p>
+
+    <section class="experience" data-animation="true" id="experience">
+        <div class="content-wrapper">
+            <h2>Experience</h2>
+            <div class="timeline"></div>
+        </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 John Kakareka. All rights reserved.</p>
-    </footer>
+
+    <section class="education" data-animation="true" id="education">
+        <div class="content-wrapper">
+            <h2>Education</h2>
+            <div class="education-grid"></div>
+        </div>
+    </section>
+
+    <section class="certifications" data-animation="true" id="certifications">
+        <div class="content-wrapper">
+            <h2>Certifications</h2>
+            <div class="certs-grid"></div>
+        </div>
+    </section>
+
+
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <a href="#" id="modalLink" target="_blank">View Project</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
